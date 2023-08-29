@@ -11,17 +11,19 @@ Create from EOM 3.0 cif files a full atom pdb files :
 
 ## Requirements
 - Python 3.x
+  
 Python packages:
-1- Open Babel
+   1- Open Babel
 
 conda install openbabel
 
-2- tqdm
+   2- tqdm
 
 conda install tqdm
 
 External programs:  
-1- PD2
+    1- PD2
+
 https://github.com/jmacdona/pd2_public
 
 To install PD2 you need:
