@@ -69,7 +69,7 @@ SCWRL_DB = os.environ.get("SCWRL_DB")
 
 # Check if the command line arguments are provided correctly
 if len(sys.argv) < 3:
-    print("Please provide the necessary arguments: script_name.py data_folder_path qmin_offset qmax_offset")
+    print("Please provide the necessary arguments: script_name.py Sequence.fasta data_folder_path")
     sys.exit(1)
 # Path to the sequence 
 SEQ = str(sys.argv[1])
