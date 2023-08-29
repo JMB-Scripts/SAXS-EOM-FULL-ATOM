@@ -1,16 +1,21 @@
 ## SAXS-EOM-FULL-ATOM
+
 Convert EOM output to a full atom PDB files 
+
 ## Features
 Create from EOM 3.0 cif files a full atom pdb files :
+
 1 - Converts CIF files to PDB format using Open Babel.
 2 - Creates peptide bonds and linking C-alpha dummy atoms using PD2.
 3 - Optimises side-chain conformations using Scwrl4.
+
 ## Requirements
 - Python 3.x
 Python packages:
 1- Open Babel
 
 conda install openbabel
+
 2- tqdm
 
 conda install tqdm
