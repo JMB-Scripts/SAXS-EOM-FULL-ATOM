@@ -11,12 +11,14 @@ Python packages:
 1- Open Babel
 
 conda install openbabel
-# 2- tqdm
+2- tqdm
 
 conda install tqdm
+
 External programs:  
 1- PD2
 https://github.com/jmacdona/pd2_public
+
 To install PD2 you need:
    For LINUX and MAC:
        1- You need to update the SConstruct file and change all the print fonction
@@ -53,5 +55,5 @@ To install PD2 you need:
  The script will convert CIF files to PDB format, perform protein structure refinement, optimize side-chain conformations, and generate output PDB files 
  in the final_pdb/ directory.
 
-# 2023 Bourhis Jean-Marie (with a bit chat gpt, I'm still a "tanche" in python but getting there)
+2023 Bourhis Jean-Marie (with a bit chat gpt, I'm still a "tanche" in python but getting there)
 
