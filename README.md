@@ -62,5 +62,5 @@ To install PD2 you need:
  The script will convert CIF files to PDB format, perform protein structure refinement, optimize side-chain conformations, and generate output PDB files 
  in the final_pdb/ directory.
 
-2023 Bourhis Jean-Marie (with a bit chat gpt, I'm still a "tanche" in python but getting there)
+2023 JMB
 
