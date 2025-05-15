@@ -28,11 +28,17 @@ https://github.com/jmacdona/pd2_public
 
 To install PD2 you need:
    For LINUX and MAC:
+   
        1- You need to update the SConstruct file and change all the print fonction
+       
        example print("INFO: compiling with gprof flags")
+       
    For LINUX only :
+   
        2- you need to change the name of the liboost by removing the "-mt", because liboost change its name
-  For Mac only   
+       
+  For Mac only :
+  
        2 -In src/external/include/eigen replace the file by the last version on GitHub
 
            https://github.com/libigl/eigen
@@ -40,14 +46,17 @@ To install PD2 you need:
        3- Add -mt for boost_thread
 
    For LINUX and MAC:
+   
        In your .bashrc add something like
            export PATH=$PATH:/location/of/PD2/bin
            export PD2_DB=/location/of/PD2/database
+           
  2- Scwrl4
 
  http://dunbrack.fccc.edu/lab/scwrl
 
  In your .bashrc add something like 
+ 
  export PATH=$PATH://location/of/Scwrl4
  export SCWRL_DB=/location/of/Scwrl4.ini
 
