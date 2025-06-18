@@ -11,19 +11,18 @@ EOMv3.0 genrates cif that you can convert to full atom pdb files :
 
 ## Requirements
   ### Python 3.x
-  
   Python packages:
-   1- Open Babel
+1- Open Babel
 
   conda install openbabel
 
-   2- tqdm
+2- tqdm
 
   conda install tqdm
 
   ### External programs:  
     
-      1- PD2
+ 1- PD2
 
 https://github.com/jmacdona/pd2_public
 
@@ -31,19 +30,20 @@ https://github.com/jmacdona/pd2_public
    
    For LINUX and MAC:
    
-       1- You need to update the SConstruct file and change all the print fonction
+ 1- You need to update the SConstruct file and change all the print fonction
        
        example print("INFO: compiling with gprof flags")
   
-       2- you need to change the name of the liboost by removing the "-mt", because liboost change its name
+ 2- you need to change the name of the liboost by removing the "-mt", because liboost change its name
        
-  For Mac M1,M2 ...:
+ For Mac M1,M2 ...:
   
-      1- In src/external/include/eigen replace the file by the last version on GitHub
+ 1- In src/external/include/eigen replace the file by the last version on GitHub
 
            https://github.com/libigl/eigen
            
-      2- Modify the SConstruct
+ 2- Modify the SConstruct
+ 
       add 
       '''
       import platform
@@ -59,14 +59,14 @@ https://github.com/jmacdona/pd2_public
       cxxflags.insert(0, '-msse3')  # On ajoute -msse3 uniquement sur x86_64
       
       '''
-      
-   For LINUX and MAC:
-   
+For LINUX and MAC:
+
        In your .bashrc add something like
+
            export PATH=$PATH:/location/of/PD2/bin
            export PD2_DB=/location/of/PD2/database
            
- 2- Scwrl4
+ #### Scwrl4
 
  http://dunbrack.fccc.edu/lab/scwrl
 
@@ -86,5 +86,5 @@ https://github.com/jmacdona/pd2_public
  The script will convert CIF files to PDB format, perform protein structure refinement, optimize side-chain conformations, and generate output PDB files 
  in the final_pdb/ directory.
 
-2023 JMB
+2025 JMB
 
