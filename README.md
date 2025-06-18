@@ -32,9 +32,7 @@ To install PD2 you need:
        1- You need to update the SConstruct file and change all the print fonction
        
        example print("INFO: compiling with gprof flags")
-       
-   For LINUX only :
-   
+  
        2- you need to change the name of the liboost by removing the "-mt", because liboost change its name
        
   For Mac only :
