@@ -3,7 +3,7 @@
 Convert EOM output to a full atom PDB files 
 
 ## Features
-EOMv3.0 genrates cif that you can convert to full atom pdb files :
+EOM v3.xx generates cif files that you can convert to full atom pdb files :
 
 1 - Converts CIF files to PDB format using Open Babel.
 
