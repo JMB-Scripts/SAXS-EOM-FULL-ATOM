@@ -42,11 +42,12 @@ To install PD2 you need:
 
            https://github.com/libigl/eigen
            
-      2- add on SConstruct
-      
+      2- Modify the SConstruct
+      add 
+      '''
       import platform
       is_arm = platform.machine() == "arm64"
-
+      '''
       and change the line 'gcc_cppflags='
       for 
       
