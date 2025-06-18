@@ -10,23 +10,24 @@ EOMv3.0 genrates cif that you can convert to full atom pdb files :
 3 - Optimises side-chain conformations using Scwrl4.
 
 ## Requirements
-- Python 3.x
+  ### Python 3.x
   
-Python packages:
+  Python packages:
    1- Open Babel
 
-conda install openbabel
+  conda install openbabel
 
    2- tqdm
 
-conda install tqdm
+  conda install tqdm
 
-External programs:  
-    1- PD2
+  ### External programs:  
+    
+      1- PD2
 
 https://github.com/jmacdona/pd2_public
 
-To install PD2 you need:
+  #### To install PD2 you need:
    
    For LINUX and MAC:
    
