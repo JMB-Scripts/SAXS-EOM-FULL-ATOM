@@ -11,7 +11,9 @@ EOMv3.0 genrates cif that you can convert to full atom pdb files :
 
 ## Requirements
   ### Python 3.x
+  
   Python packages:
+  
 1- Open Babel
 
   conda install openbabel
