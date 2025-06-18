@@ -47,21 +47,17 @@ https://github.com/jmacdona/pd2_public
  2- Modify the SConstruct
  
       add 
-      '''
-      import platform
-      is_arm = platform.machine() == "arm64"
-      '''
+
+          import platform
+          is_arm = platform.machine() == "arm64"
+      
       and change the line 'gcc_cppflags='
       for 
+          gcc_cppflags = ['-ffast-math', '-funroll-loops', '-pipe','-g', '-Wall', '-fmessage-length=0', '-std=c++17' ]
+          if not is_arm:
+          cxxflags.insert(0, '-msse3')  # On ajoute -msse3 uniquement sur x86_64
       
-      '''
-      
-      gcc_cppflags = ['-ffast-math', '-funroll-loops', '-pipe','-g', '-Wall', '-fmessage-length=0', '-std=c++17' ]
-      if not is_arm:
-      cxxflags.insert(0, '-msse3')  # On ajoute -msse3 uniquement sur x86_64
-      
-      '''
-For LINUX and MAC:
+  For LINUX and MAC:
 
        In your .bashrc add something like
 
