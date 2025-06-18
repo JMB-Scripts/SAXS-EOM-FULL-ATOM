@@ -6,7 +6,9 @@ Convert EOM output to a full atom PDB files
 EOMv3.0 genrates cif that you can convert to full atom pdb files :
 
 1 - Converts CIF files to PDB format using Open Babel.
+
 2 - Creates peptide bonds and links C-alpha dummy atoms using PD2.
+
 3 - Optimises side-chain conformations using Scwrl4.
 
 ## Requirements
