@@ -27,6 +27,7 @@ External programs:
 https://github.com/jmacdona/pd2_public
 
 To install PD2 you need:
+   
    For LINUX and MAC:
    
        1- You need to update the SConstruct file and change all the print fonction
@@ -35,14 +36,28 @@ To install PD2 you need:
   
        2- you need to change the name of the liboost by removing the "-mt", because liboost change its name
        
-  For Mac only :
+  For Mac M1,M2 ...:
   
-       2 -In src/external/include/eigen replace the file by the last version on GitHub
+      1- In src/external/include/eigen replace the file by the last version on GitHub
 
            https://github.com/libigl/eigen
+           
+      2- add on SConstruct
+      
+      import platform
+      is_arm = platform.machine() == "arm64"
 
-       3- Add -mt for boost_thread
-
+      and change the line 'gcc_cppflags='
+      for 
+      
+      '''
+      
+      gcc_cppflags = ['-ffast-math', '-funroll-loops', '-pipe','-g', '-Wall', '-fmessage-length=0', '-std=c++17' ]
+      if not is_arm:
+      cxxflags.insert(0, '-msse3')  # On ajoute -msse3 uniquement sur x86_64
+      
+      '''
+      
    For LINUX and MAC:
    
        In your .bashrc add something like
