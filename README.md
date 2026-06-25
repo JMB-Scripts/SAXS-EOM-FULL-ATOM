@@ -55,7 +55,8 @@ https://github.com/jmacdona/pd2_public
       
       and change the line 'gcc_cppflags='
       for 
-          gcc_cppflags = ['-ffast-math', '-funroll-loops', '-pipe','-g', '-Wall', '-fmessage-length=0', '-std=c++17' ]
+          gcc_cppflags = ['-ffast-math', '-funroll-loops', '-pipe','-g', '-Wall', '-fmessage-length=0', '-std=c++17', '-DBOOST_TIMER_ENABLE_DEPRECATED=1', '-Wno-deprecated-declarations']
+
           if not is_arm:
           cxxflags.insert(0, '-msse3')  # On ajoute -msse3 uniquement sur x86_64
       
