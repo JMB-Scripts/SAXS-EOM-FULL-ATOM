@@ -47,18 +47,8 @@ https://github.com/jmacdona/pd2_public
            https://github.com/libigl/eigen
            
  2- Modify the SConstruct
- 
-      add 
-
-          import platform
-          is_arm = platform.machine() == "arm64"
-      
-      and change the line 'gcc_cppflags='
-      for 
-          gcc_cppflags = ['-ffast-math', '-funroll-loops', '-pipe','-g', '-Wall', '-fmessage-length=0', '-std=c++17', '-DBOOST_TIMER_ENABLE_DEPRECATED=1', '-Wno-deprecated-declarations']
-
-          if not is_arm:
-          cxxflags.insert(0, '-msse3')  # On ajoute -msse3 uniquement sur x86_64
+change the line 'gcc_cppflags='
+gcc_cppflags = ['-ffast-math', '-funroll-loops', '-pipe','-g', '-Wall', '-fmessage-length=0', '-std=c++17', '-DBOOST_TIMER_ENABLE_DEPRECATED=1', '-Wno-deprecated-declarations']
       
   For LINUX and MAC:
 
